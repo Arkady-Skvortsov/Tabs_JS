@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* body {
+	margin: 0;
+	padding: 0;
+} */
+
+.page {
+	width: 100%;
+	height: 757px;
+	background: black;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.page .tabs {
+	height: 757px;
+    /* width:  550px; */
+	display: flex;
+	width: 550px;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.page .tabs .tab_menu {
+	height: 75px;
+	width: 550px;
+	position: absolute;
+	top: 0px;
+	background: black;
+}
+
+.page .tabs .tab_menu .block {
+	display: inline-block;
+	height: 75px;
+	width: 273px;
+	transition: .8s;
+	-o-transition: .8s;
+	-mozila-transition: .8s;
+	-webkit-transition: .8s;
+}
+
+.page .tabs .tab_menu .block a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin-top: 12.5px;
+    color: white;
+}
+
+.page .tabs .tab_menu .block a.block__active {
+	color: red;
+}
+
+.page .tabs .tab_menu .block a span {
+	transition: .8s;
+    -o-transition: .8s;
+    -webkit-transition: .8s;
+    -mozila-transition: .8s;
+}
+
+.page .tabs .tabs_content {
+    height: 640px;
+    width: 550px;
+    position: absolute;
+    margin-top: 75px;
+}
+
+.page .tabs .tabs_content .tab {
+	height: 611px;
+	width: 350px;
+	margin: 0 auto;
+	margin-top: 50px;
+	display: none;
+}
+
+.page .tabs .tabs_content .tab.tab__active {
+	display: block;
+}
+
+.page .tabs .tabs_content .tab .hero_block {
+    height: 300px;
+    width: 350px;
+    position: absolute;
+    margin-top: 50px;
+    background: url('./img/Ellie.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: .9s;
+    -o-transition: .9s;
+    -webkit-transition: .9s;
+    -mozila-transition: .9s;
+}
+
+.page .tabs .tabs_content .tab .hr_1 {
+	border: 4px solid white;
+}
+
+.page .tabs .tabs_content .tab .hr_2 {
+	border: 4px solid red;
+}
+
+.page .tabs .tabs_content .tab .hr_2 {
+	background: url('./img/Abby.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.page .tabs .tabs_content .tab .hero_block .arrow_block {
+	background: rgba(0, 0, 0, .8);
+	height: 300px;
+	width: 350px;
+	left: 0;
+	top: 0;
+	position: absolute;
+	display: none;
+}
+
+.page .tabs .tabs_content .tab .hero_block .arrow_block.show {
+	display: block;
+}
+
+.page .tabs .tabs_content .tab .hero_block .arrow_block .arrow {
+	font-size: 100px;
+	cursor: pointer;
+	color: white;
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	transition: .8s;
+    -o-transition: .8s;
+    -webkit-transition: .8s;
+    -mozila-transition: .8s;
+}
+
+.page .tabs .tabs_content .tab .hero_block .arrow_block .arrow_first:hover {
+	transform: translateY(20px);
+	color: red;
+	text-shadow: 0 0 15px red;
+}
+
+.page .tabs .tabs_content .tab .hero_block .arrow_block .arrow_second {
+	color: red;
+}
+
+.page .tabs .tabs_content .tab .hero_block .arrow_block .arrow_second:hover {
+	transform: translateY(-20px);
+	color: white;
+	text-shadow: 0 0 15px white;
+}
+
+.page .tabs .tabs_content .tab .hr_1:hover {
+    border: 4px solid red;
+} 
+
+.page .tabs .tabs_content .tab .hr_2:hover {
+	border: 4px solid white;
+}
+
+.page .tabs .tabs_content .tab .text_content {
+	height: 226px;
+	width: 350px;
+	position: absolute;
+	margin-top: 385px;
+	display: inline;
+}
+
+.page .tabs .tabs_content .tab .text_content .txt {
+	font-size: 20px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
